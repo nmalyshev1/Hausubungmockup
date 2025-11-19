@@ -1,0 +1,6 @@
+/* 1. Change Bootstrap's default design (you can tweak later) */
+$primary: #ff7b2c;  // example Pick a Pet orange
+$font-family-sans-serif: "Arial", sans-serif; // later your own font
+
+/* 2. Load all of Bootstrap with your new settings */
+@import "../vendor/bootstrap/scss/bootstrap";
