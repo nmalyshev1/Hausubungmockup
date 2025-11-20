@@ -1,6 +1,14 @@
-/* 1. Change Bootstrap's default design (you can tweak later) */
-$primary: #ff7b2c;  // example Pick a Pet orange
-$font-family-sans-serif: "Arial", sans-serif; // later your own font
+@charset "UTF-8";
 
-/* 2. Load all of Bootstrap with your new settings */
+/* 1. Theme overrides */
+$primary: #ff7b2c;
+$font-family-sans-serif: "Arial", sans-serif;
+
+/* 2. Correct path to icon fonts (relative to custom.css) */
+$bootstrap-icons-font-dir: "../vendor/bootstrap-icons/font";
+
+/* 3. Load Bootstrap with overrides */
 @import "../vendor/bootstrap/scss/bootstrap";
+
+/* 4. Load Bootstrap Icons */
+@import "../vendor/bootstrap-icons/bootstrap-icons";
