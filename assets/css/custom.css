@@ -20200,4 +20200,20 @@ textarea.form-control-lg {
   content: "爛";
 }
 
+.round-image {
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+}
+
+
+
+
+
 /*# sourceMappingURL=custom.css.map */
+
+
+
