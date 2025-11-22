@@ -1,24 +1,253 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
-
     <meta charset="UTF-8">
-
-<!--makes page responsive on mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pick a Pet – Startseite</title>
 
-    <title>Pick a Pet-Startseite</title>
-<!--Connects bootstrap to my theme-->
+    <!-- Dein kompiliertes Bootstrap + eigenes CSS -->
     <link rel="stylesheet" href="assets/css/custom.css">
+
+    <!-- Bootstrap Icons (lokale Datei) -->
+    <link rel="stylesheet" href="assets/css/bootstrap-icons.css">
 </head>
 <body>
 
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum debitis dolores ex facere molestias nulla quae tenetur voluptates. Adipisci distinctio esse eveniet ex maiores repellendus reprehenderit similique. Aliquid, quo suscipit.</p>
+<!-- ============== NAVBAR ============== -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
 
-<i class="bi bi-heart-fill" style="font-size: 3rem; color: #ff7b2c;"></i>
+        <!-- Logo -->
+        <a class="navbar-brand" href="index.html">Pick a Pet</a>
 
+        <!-- Burger-Button für Handy -->
+        <button class="navbar-toggler" type="button"
+                data-bs-toggle="collapse" data-bs-target="#mainNav"
+                aria-controls="mainNav" aria-expanded="false"
+                aria-label="Navigation umschalten">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-<!--Bootstrap Java for navbar and dropdowns-->
+        <!-- Menüpunkte -->
+        <div class="collapse navbar-collapse" id="mainNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link active" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="ueber-uns.html">Über uns</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="tiere.html">Tiere</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="spenden.html">Spenden</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- ============== HERO: HUND + KATZE ============== -->
+<section class="py-4">
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Hund links -->
+            <div class="col-md-6 text-center p-5">
+                <img src="assets/img/dog.jpeg"
+                     alt="Hund"
+                     class="img-fluid w-100">
+                <button class="btn btn-secondary mt-3">Walk with a Dog</button>
+            </div>
+
+            <!-- Katze rechts -->
+            <div class="col-md-6 text-center p-5">
+                <img src="assets/img/cat.jpg"
+                     alt="Katze"
+                     class="img-fluid w-100">
+                <button class="btn btn-secondary mt-3">Cuddle a Cat</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ============== DAS IST PICK A PET (4 Kreise) ============== -->
+<section class="py-5">
+    <div class="container text-center">
+        <h2 class="mb-4">DAS IST PICK A PET</h2>
+
+        <div class="row g-4">
+            <!-- Box 1 -->
+            <div class="col-12 col-md-3">
+                <div class="p-3">
+                    <img src="assets/img/team.jpg"
+                         alt="Team"
+                         class="round-image mb-3">
+                    <p>Das sind wir: Das Team hinter „Pick a Pet“</p>
+                </div>
+            </div>
+
+            <!-- Box 2 -->
+            <div class="col-12 col-md-3">
+                <div class="p-3">
+                    <img src="assets/img/corona.jpg"
+                         alt="Covid"
+                         class="round-image mb-3">
+                    <p>Auch während Covid-19 sind wir für euch da</p>
+                </div>
+            </div>
+
+            <!-- Box 3 -->
+            <div class="col-12 col-md-3">
+                <div class="p-3">
+                    <img src="assets/img/termin.jpg"
+                         alt="Online Termin"
+                         class="round-image mb-3">
+                    <p>Bequem online Termine mit dem Tier deiner Wahl buchen</p>
+                </div>
+            </div>
+
+            <!-- Box 4 -->
+            <div class="col-12 col-md-3">
+                <div class="p-3">
+                    <img src="assets/img/tiere.jpg"
+                         alt="Gemeinsame Zeit"
+                         class="round-image mb-3">
+                    <p>Gemeinsame Zeit mit Tieren &amp; nachhaltige Vermittlung</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ============== ABONNEMENTS & SPENDEN ============== -->
+<section class="py-5 bg-light">
+    <div class="container">
+        <div class="row g-4">
+            <!-- Abonnements -->
+            <div class="col-12 col-md-6">
+                <div class="p-4 text-center border">
+                    <h3 class="mb-3">ABONNEMENTS</h3>
+                    <p class="mb-4">
+                        Bei Pick a Pet hast du die Möglichkeit, dich
+                        zwischen zwei Abonnements zu entscheiden.
+                        Informiere dich jetzt über deine Vorteile!
+                    </p>
+                    <button class="btn btn-secondary">Details</button>
+                </div>
+            </div>
+
+            <!-- Spenden -->
+            <div class="col-12 col-md-6">
+                <div class="p-4 text-center border">
+                    <h3 class="mb-3">SPENDEN</h3>
+                    <p class="mb-4">
+                        Tue etwas Gutes und unterstütze über
+                        Pick a Pet das Tierheim deiner Wahl!
+                        – Jetzt Spenden –
+                    </p>
+                    <button class="btn btn-secondary">Details</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ============== GROSSES BANNERBILD ============== -->
+<section class="my-5">
+    <div class="container-fluid p-0">
+        <img src="assets/img/dog%20and%20cat.jpg"
+             alt="Hund und Katze"
+             class="img-fluid w-100 banner-image">
+    </div>
+</section>
+
+<!-- ============== ICONS + ZAHLEN ============== -->
+<section class="py-5">
+    <div class="container">
+        <div class="row text-center">
+
+            <div class="col-6 col-md-3 mb-4">
+                <i class="bi bi-people fs-1"></i>
+                <p class="mt-2">2000 aktive<br>Nutzer</p>
+            </div>
+
+            <div class="col-6 col-md-3 mb-4">
+                <i class="bi bi-house fs-1"></i>
+                <p class="mt-2">100 Tierheime<br>gelistet</p>
+            </div>
+
+            <div class="col-6 col-md-3 mb-4">
+                <i class="bi bi-cash fs-1"></i>
+                <p class="mt-2">100.000€ Spenden<br>gesammelt</p>
+            </div>
+
+            <div class="col-6 col-md-3 mb-4">
+                <i class="bi bi-handshake fs-1"></i>
+                <p class="mt-2">1500 Tiere<br>vermittelt</p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- ============== TESTIMONIALS ============== -->
+<section class="py-5">
+    <div class="container text-center">
+        <div class="row g-4">
+
+            <div class="col-12 col-md-4">
+                <img src="assets/img/person1.jpg"
+                     alt="Kunde 1"
+                     class="round-image mb-3">
+                <p>"Die Buchung verlief unglaublich einfach…"</p>
+            </div>
+
+            <div class="col-12 col-md-4">
+                <img src="assets/img/person2.jpg"
+                     alt="Kunde 2"
+                     class="round-image mb-3">
+                <p>"Tolle Auswahl an Tieren!"</p>
+            </div>
+
+            <div class="col-12 col-md-4">
+                <img src="assets/img/person3.jpg"
+                     alt="Kunde 3"
+                     class="round-image mb-3">
+                <p>"Faire Abopreise, mit denen man etwas Gutes tut!"</p>
+            </div>
+
+        </div>
+
+        <p class="mt-4">
+            Du bist überzeugt von Pick a Pet? Teile uns jetzt deine Meinung <a href="#">hier</a> mit!
+        </p>
+    </div>
+</section>
+
+<!-- ============== FOOTER ============== -->
+<footer class="py-5" style="background-color:#f7f8fa;">
+    <div class="container text-center">
+
+        <!-- Social Media Icons -->
+        <div class="mb-4">
+            <i class="bi bi-facebook fs-3 mx-3"></i>
+            <i class="bi bi-instagram fs-3 mx-3"></i>
+            <i class="bi bi-twitter fs-3 mx-3"></i>
+        </div>
+
+        <!-- Links -->
+        <p class="mb-0">
+            Kontakt &nbsp; · &nbsp;
+            Impressum &amp; Datenschutz &nbsp; · &nbsp;
+            AGB
+        </p>
+
+    </div>
+</footer>
+
+<!-- Bootstrap JS -->
 <script src="assets/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
+
