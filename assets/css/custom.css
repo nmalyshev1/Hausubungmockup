@@ -11866,18 +11866,21 @@ textarea.form-control-lg {
 }
 
 .navbar {
-  background-color: #eaf0f3;
-  color: #eaf0f3;
+  background-color: #f0ffff;
+  color: #7a6e64;
   padding-top: 0px;
   padding-bottom: 0px;
 }
 .navbar .nav-link {
   padding-left: 20px !important;
   padding-right: 20px !important;
+  color: #7a6e64;
   font-weight: 600;
 }
-
-.nav-user-btn {
+.navbar .nav-link .nav-link.active {
+  color: #6b5e4c !important;
+}
+.navbar .nav-user-btn {
   font-size: 24px;
 }
 
@@ -11922,6 +11925,89 @@ textarea.form-control-lg {
 
 .hero-about-text {
   font-weight: 400px;
+}
+
+.stats-section {
+  margin-top: -500px;
+}
+
+.stats-icon {
+  width: 30px;
+  height: 30px;
+  margin-bottom: 0;
+  color: #7a6e64;
+}
+
+/* wrapper around the banner + icons */
+.hero-stats-wrapper {
+  position: relative;
+}
+
+/* icons glued to bottom of image, overlap like one unit */
+.hero-stats-icons {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translate(-50%, 50%);
+  width: 100%;
+}
+
+.stats-icon {
+  font-size: 48px;
+  width: 48px;
+  height: 48px;
+  color: #7a6e64;
+  filter: drop-shadow(0 0 14px rgb(255, 255, 255));
+}
+
+.stats-box-last {
+  margin-top: 20px;
+  filter: invert(35%) sepia(14%) saturate(300%) hue-rotate(346deg) brightness(92%) contrast(90%);
+}
+
+.link-brown {
+  color: #7a6e64;
+}
+
+.testimonials-brown-text {
+  color: #7a6e64;
+}
+
+.link-brown:hover {
+  color: rgb(171.2162162162, 161.1621621622, 152.7837837838);
+}
+
+/* Footer background */
+.footer-bg {
+  background-color: #f0ffff;
+  color: #7a6e64;
+}
+
+/* Footer text links — same logic as link-brown */
+.footer-links a {
+  color: #7a6e64 !important;
+  text-decoration: none;
+  font-size: 24px;
+  margin: 0 14px;
+}
+
+.footer-links a:hover {
+  color: rgb(171.2162162162, 161.1621621622, 152.7837837838) !important;
+}
+
+/* Footer icons — same hover logic */
+.footer-icons a {
+  text-decoration: none;
+}
+
+.footer-icons a i {
+  color: #7a6e64 !important;
+  font-size: 32px;
+  margin: 0 30px;
+}
+
+.footer-icons a i:hover {
+  color: rgb(171.2162162162, 161.1621621622, 152.7837837838) !important;
 }
 
 /*# sourceMappingURL=custom.css.map */

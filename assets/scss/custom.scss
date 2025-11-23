@@ -1,8 +1,6 @@
 @charset "UTF-8";
 
-$navbar-background-color: #eaf0f3;
-
-$navbar-font-color: #eaf0f3;
+$navbar-background-color: #f0ffff;
 
 $custom-brown: #7a6e64;
 
@@ -15,23 +13,27 @@ $custom-brown: #7a6e64;
   display: inline-block;
 }
 
-.navbar{
-background-color: $navbar-background-color;
-  color: $navbar-font-color;
+.navbar {
+  background-color: $navbar-background-color;
+  color: $custom-brown;
   padding-top: 0px;
-padding-bottom: 0px;
+  padding-bottom: 0px;
 
-  .nav-link{
+  .nav-link {
     padding-left: 20px !important;
     padding-right: 20px !important;
-    $custom-brown: #7a6e64;
+   color: $custom-brown;
     font-weight: 600;
+
+    .nav-link.active {
+      color: #6b5e4c !important; // same brown for active
+    }
+  }
+
+  .nav-user-btn {
+    font-size: 24px;
   }
 }
-.nav-user-btn{
-  font-size: 24px;
-}
-
 .img-text{
   position: relative;
 }
@@ -62,6 +64,7 @@ color: $custom-brown;
   font-weight: 200;
 }
 
+
 .round-image {
   width: 200px;
   height: 200px;
@@ -71,8 +74,90 @@ color: $custom-brown;
   margin: 0 auto; /* center */
 }
 
-
-
 .hero-about-text{
   font-weight: 400px;
+}
+
+.stats-section {
+  margin-top: -500px;  // pulls icons up over the image
+
+}
+
+.stats-icon {
+  width: 30px;
+  height: 30px;
+  margin-bottom: 0;
+  color: $custom-brown;
+}
+
+/* wrapper around the banner + icons */
+.hero-stats-wrapper {
+  position: relative;
+}
+
+/* icons glued to bottom of image, overlap like one unit */
+.hero-stats-icons {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translate(-50%, 50%); // half on image, half below
+  width: 100%;
+}
+
+
+.stats-icon {
+  font-size: 48px;   // for <i> icons
+  width: 48px;       // for the SVG so it's similar size
+  height: 48px;
+  color: #7a6e64;    // your brown
+  filter: drop-shadow(0 0 14px rgba(255, 255, 255, 1));
+
+}
+.stats-box-last {
+  margin-top: 20px;
+  filter: invert(35%) sepia(14%) saturate(300%) hue-rotate(346deg) brightness(92%) contrast(90%);
+}
+
+.link-brown{
+color: $custom-brown;
+}
+.testimonials-brown-text{
+  color: $custom-brown;
+}
+
+.link-brown:hover {
+
+  color: lighten($custom-brown, 20%); // makes a lighter brown automatically
+}
+/* Footer background */
+.footer-bg {
+  background-color: $navbar-background-color;
+  color: $custom-brown;
+}
+
+/* Footer text links — same logic as link-brown */
+.footer-links a {
+  color: $custom-brown !important;
+  text-decoration: none;
+  font-size: 24px;
+  margin: 0 14px;
+}
+
+.footer-links a:hover {
+  color: lighten($custom-brown, 20%) !important;
+}
+
+/* Footer icons — same hover logic */
+.footer-icons a {
+  text-decoration: none;
+}
+
+.footer-icons a i {
+  color: $custom-brown !important;
+  font-size: 32px;
+  margin: 0 30px;
+}
+
+.footer-icons a i:hover {
+  color: lighten($custom-brown, 20%) !important;
 }
