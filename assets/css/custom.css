@@ -12010,4 +12010,27 @@ textarea.form-control-lg {
   color: rgb(171.2162162162, 161.1621621622, 152.7837837838) !important;
 }
 
+/* HTML Page 2 */
+.criterias-text {
+  color: #7a6e64;
+  font-size: 24px;
+}
+
+.logo-icon-criteria {
+  width: 60px;
+}
+
+.filter-icon {
+  font-size: 60px;
+}
+
+.results-btn {
+  background-color: #7a6e64;
+  color: white;
+}
+
+.adjust-search-input {
+  height: 50px;
+}
+
 /*# sourceMappingURL=custom.css.map */

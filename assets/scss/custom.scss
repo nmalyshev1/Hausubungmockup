@@ -161,3 +161,30 @@ color: $custom-brown;
 .footer-icons a i:hover {
   color: lighten($custom-brown, 20%) !important;
 }
+
+
+
+
+/* HTML Page 2 */
+
+.criterias-text {
+  color: $custom-brown;
+
+  font-size: 24px;
+}
+.logo-icon-criteria{
+  width: 60px;
+}
+
+.filter-icon{
+  font-size: 60px;
+}
+
+.results-btn{
+  background-color: $custom-brown;
+  color: white;
+}
+
+.adjust-search-input{
+  height: 50px;
+}
