@@ -13,26 +13,28 @@ $custom-brown: #7a6e64;
   display: inline-block;
 }
 
+
+
+
 .navbar {
-
   color: $custom-brown;
-  padding-top: 0px;
-  padding-bottom: 0px;
+  padding-block: 0;
 
-
-  /* makes the bg limited*/
-  .container-color{
+  .container-color {
     background-color: $navbar-background-color;
   }
 
   .nav-link {
-    padding-left: 20px !important;
-    padding-right: 20px !important;
-   color: $custom-brown;
+
+    color: $custom-brown;
     font-weight: 600;
 
-    .nav-link.active {
-      color: #6b5e4c !important; // same brown for active
+    &:hover {
+      color: lighten($custom-brown, 12%);
+    }
+
+    &.active {
+      color: darken($custom-brown, 12%);
     }
   }
 
@@ -40,6 +42,16 @@ $custom-brown: #7a6e64;
     font-size: 24px;
   }
 }
+
+
+
+
+
+
+
+
+
+
 .img-text{
   position: relative;
 }

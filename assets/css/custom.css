@@ -11867,21 +11867,20 @@ textarea.form-control-lg {
 
 .navbar {
   color: #7a6e64;
-  padding-top: 0px;
-  padding-bottom: 0px;
-  /* makes the bg limited*/
+  padding-block: 0;
 }
 .navbar .container-color {
   background-color: #f0ffff;
 }
 .navbar .nav-link {
-  padding-left: 20px !important;
-  padding-right: 20px !important;
   color: #7a6e64;
   font-weight: 600;
 }
-.navbar .nav-link .nav-link.active {
-  color: #6b5e4c !important;
+.navbar .nav-link:hover {
+  color: rgb(152.8378378378, 140.5783783784, 130.3621621622);
+}
+.navbar .nav-link.active {
+  color: rgb(88.3675675676, 79.6756756757, 72.4324324324);
 }
 .navbar .nav-user-btn {
   font-size: 24px;
