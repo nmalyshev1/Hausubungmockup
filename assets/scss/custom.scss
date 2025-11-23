@@ -23,6 +23,10 @@ $custom-brown: #7a6e64;
   .container-color {
     background-color: $navbar-background-color;
   }
+  .nav-search-btn,
+  .nav-user-btn {
+    color: $custom-brown;   // <- this colors the icons
+  }
 
   .nav-link {
 
@@ -37,6 +41,8 @@ $custom-brown: #7a6e64;
       color: darken($custom-brown, 12%);
     }
   }
+
+
 
   .nav-user-btn {
     font-size: 24px;
