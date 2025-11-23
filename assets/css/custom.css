@@ -11865,4 +11865,21 @@ textarea.form-control-lg {
   display: inline-block;
 }
 
+.navbar {
+  background-color: #eaf0f3;
+  color: #eaf0f3;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+.navbar .nav-link {
+  padding-left: 20px !important;
+  padding-right: 20px !important;
+  color: #7a6e64;
+  font-weight: 600;
+}
+
+.nav-user-btn {
+  font-size: 24px;
+}
+
 /*# sourceMappingURL=custom.css.map */

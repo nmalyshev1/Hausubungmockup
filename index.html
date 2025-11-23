@@ -35,7 +35,7 @@
         </a>
 
 
-        <!-- Burger-Button für Handy -->
+        <!-- Burger-Button Handy -->
         <button class="navbar-toggler" type="button"
                 data-bs-toggle="collapse" data-bs-target="#mainNav"
                 aria-controls="mainNav" aria-expanded="false"
@@ -45,7 +45,7 @@
 
         <!-- Menüpunkte -->
         <div class="collapse navbar-collapse" id="mainNav">
-            <ul class="navbar-nav ms-auto">
+            <ul class="navbar-nav mx-auto">
                 <li class="nav-item">
                     <a class="nav-link active" href="index.html">Home</a>
                 </li>
@@ -59,6 +59,18 @@
                     <a class="nav-link" href="spenden.html">Spenden</a>
                 </li>
             </ul>
+            <div class="d-flex align-items-center ms-lg-3 gap-3">
+                <form class="d-flex nav-search">
+                    <input class="form-control nav-search-input" type="search" aria-label="Search">
+                    <button class="btn nav-search-btn" type="submit">
+                        <i class="bi bi-search"></i>
+                    </button>
+                </form>
+
+                <button class="btn nav-user-btn" type="button">
+                    <i class="bi bi-person"></i>
+                </button>
+            </div>
         </div>
     </div>
 </nav>
