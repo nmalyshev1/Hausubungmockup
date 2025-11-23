@@ -11861,7 +11861,7 @@ textarea.form-control-lg {
 }
 @font-face {
   font-family: "Oswald";
-  src: url("../fonts/oswald/Oswald-ExtraLight.ttf") format("truetype");
+  src: url("../fonts/Oswalds/Oswald-Light.ttf") format("truetype");
 }
 .custom-font {
   font-family: "Oswald", sans-serif;
@@ -11882,25 +11882,28 @@ textarea.form-control-lg {
   display: inline-block;
 }
 
-.navbar, .nav-link {
-  color: #7a6e64;
+.navbar {
   padding-block: 0;
+  color: #7a6e64;
 }
-.navbar .container-color, .nav-link .container-color {
+.navbar .container-color {
   background-color: #f0ffff;
 }
+.navbar .nav-link,
 .navbar .nav-search-btn,
-.navbar .nav-user-btn, .nav-link .nav-search-btn,
-.nav-link .nav-user-btn {
+.navbar .nav-user-btn {
   color: #7a6e64;
   font-weight: 600;
 }
+.navbar .nav-link:hover,
 .navbar .nav-search-btn:hover,
-.navbar .nav-user-btn:hover, .nav-link .nav-search-btn:hover,
-.nav-link .nav-user-btn:hover {
+.navbar .nav-user-btn:hover {
   color: rgb(152.8378378378, 140.5783783784, 130.3621621622);
 }
-.navbar .nav-user-btn, .nav-link .nav-user-btn {
+.navbar .nav-link.active {
+  font-weight: 700;
+}
+.navbar .nav-user-btn {
   font-size: 24px;
 }
 
@@ -11910,15 +11913,15 @@ textarea.form-control-lg {
 
 .hero-img {
   width: 100%;
-  height: 500px; /* equal height for both images */
-  object-fit: cover; /* crop instead of stretch */
+  height: 500px;
+  object-fit: cover;
   display: block;
 }
 
 .hero-label {
   position: absolute;
-  bottom: 10%; /* better placement than top: 90% */
-  left: 50%; /* center horizontally */
+  bottom: 10%;
+  left: 50%;
   transform: translateX(-50%);
   background-color: #7a6e64;
   color: #ffffff;
@@ -11938,42 +11941,30 @@ textarea.form-control-lg {
   width: 200px;
   height: 200px;
   border-radius: 50%;
-  object-fit: cover; /* crop inside circle */
+  object-fit: cover;
   display: block;
-  margin: 0 auto; /* center */
-}
-
-.stats-section {
-  margin-top: -500px;
+  margin: 0 auto;
 }
 
 .stats-icon {
-  width: 30px;
-  height: 30px;
   margin-bottom: 0;
   color: #7a6e64;
+  font-size: 48px;
+  width: 48px;
+  height: 48px;
+  filter: drop-shadow(0 0 14px rgb(255, 255, 255));
 }
 
-/* wrapper around the banner + icons */
 .hero-stats-wrapper {
   position: relative;
 }
 
-/* icons glued to bottom of image, overlap like one unit */
 .hero-stats-icons {
   position: absolute;
   left: 50%;
   bottom: 0;
   transform: translate(-50%, 50%);
   width: 100%;
-}
-
-.stats-icon {
-  font-size: 48px;
-  width: 48px;
-  height: 48px;
-  color: #7a6e64;
-  filter: drop-shadow(0 0 14px rgb(255, 255, 255));
 }
 
 .stats-box-last {
@@ -12002,7 +11993,6 @@ textarea.form-control-lg {
   background-color: #f0ffff;
 }
 
-/* Footer text links — same logic as link-brown */
 .footer-links a {
   color: #7a6e64 !important;
   text-decoration: none;
@@ -12014,7 +12004,6 @@ textarea.form-control-lg {
   color: rgb(171.2162162162, 161.1621621622, 152.7837837838) !important;
 }
 
-/* Footer icons — same hover logic */
 .footer-icons a {
   text-decoration: none;
 }
@@ -12053,8 +12042,8 @@ textarea.form-control-lg {
 }
 
 .animal-card-img {
-  height: 230px; /* adjust if you want bigger */
-  object-fit: cover; /* crops instead of stretching */
+  height: 230px;
+  object-fit: cover;
 }
 
 /* HTML Page 3 */
@@ -12062,10 +12051,6 @@ textarea.form-control-lg {
   color: #7a6e64;
 }
 
-/* ===============================
-   Kontakt page form styling fix
-   Makes input text + borders brown
-   =============================== */
 .kontakt-page .form-control {
   border: 1.5px solid #7a6e64 !important;
   color: #7a6e64 !important;
@@ -12073,6 +12058,37 @@ textarea.form-control-lg {
 
 .kontakt-page .form-control::placeholder {
   color: rgb(159.7297297297, 148.2972972973, 138.7702702703) !important;
+}
+
+/* Impressum/Datenschutz css */
+.pkp-intern-box {
+  background-color: #f5f7f8;
+  border-radius: 4px;
+  border: 1px solid #d7dee4;
+}
+
+.pkp-intern-box h2, .pkp-intern-box .h2 {
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-weight: 600;
+}
+
+.pkp-intern-list li {
+  padding: 0.4rem 0;
+}
+
+.pkp-divider {
+  border-bottom: 1px solid #c3ccd4;
+  margin: 0.25rem 0;
+}
+
+.pkp-intern-list {
+  font-size: 0.95rem;
+}
+
+.pkp-intern-active {
+  color: #8b1b2b;
+  font-weight:  600;
 }
 
 /*# sourceMappingURL=custom.css.map */

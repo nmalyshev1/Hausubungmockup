@@ -1,14 +1,16 @@
 @charset "UTF-8";
 
+@import "../vendor/bootstrap/scss/bootstrap";
+
 $navbar-background-color: #f0ffff;
 
 $custom-brown: #7a6e64;
 
-@import "../vendor/bootstrap/scss/bootstrap";
+
 
 @font-face {
   font-family: "Oswald";
-  src: url("../fonts/oswald/Oswald-ExtraLight.ttf") format("truetype");
+  src: url("../fonts/Oswalds/Oswald-Light.ttf") format("truetype");
 }
 
 
@@ -27,28 +29,23 @@ $custom-brown: #7a6e64;
   color: $custom-brown;
 }
 
-
-
 .logo-icon{
   width: 20px;
   height: auto;
   display: inline-block;
 }
 
-
-
-
-.navbar, .nav-link {
-  color: $custom-brown;
+.navbar {
   padding-block: 0;
+  color: $custom-brown;
 
   .container-color {
     background-color: $navbar-background-color;
   }
 
-
+  .nav-link,
   .nav-search-btn,
-  .nav-user-btn,{
+  .nav-user-btn {
     color: $custom-brown;
     font-weight: 600;
 
@@ -57,19 +54,14 @@ $custom-brown: #7a6e64;
     }
   }
 
+  .nav-link.active {
+    font-weight: 700;
+  }
+
   .nav-user-btn {
     font-size: 24px;
   }
 }
-
-
-
-
-
-
-
-
-
 
 .img-text{
   position: relative;
@@ -77,17 +69,17 @@ $custom-brown: #7a6e64;
 
 .hero-img {
   width: 100%;
-  height: 500px;      /* equal height for both images */
-  object-fit: cover;  /* crop instead of stretch */
+  height: 500px;
+  object-fit: cover;
   display: block;
 }
 
 .hero-label {
   position: absolute;
-  bottom: 10%;  /* better placement than top: 90% */
-  left: 50%;    /* center horizontally */
+  bottom: 10%;
+  left: 50%;
   transform: translateX(-50%);
-  background-color: #7a6e64;
+  background-color: $custom-brown;
   color: #ffffff;
   padding: 5px 20px;
   border-radius: 3px;
@@ -101,36 +93,29 @@ color: $custom-brown;
   font-weight: 200;
 }
 
-
 .round-image {
   width: 200px;
   height: 200px;
   border-radius: 50%;
-  object-fit: cover; /* crop inside circle */
+  object-fit: cover;
   display: block;
-  margin: 0 auto; /* center */
-}
-
-
-
-.stats-section {
-  margin-top: -500px;  // pulls icons up over the image
-
+  margin: 0 auto;
 }
 
 .stats-icon {
-  width: 30px;
-  height: 30px;
   margin-bottom: 0;
   color: $custom-brown;
+    font-size: 48px;
+    width: 48px;
+    height: 48px;
+    filter: drop-shadow(0 0 14px rgba(255, 255, 255, 1));
 }
 
-/* wrapper around the banner + icons */
 .hero-stats-wrapper {
   position: relative;
 }
 
-/* icons glued to bottom of image, overlap like one unit */
+
 .hero-stats-icons {
   position: absolute;
   left: 50%;
@@ -139,15 +124,6 @@ color: $custom-brown;
   width: 100%;
 }
 
-
-.stats-icon {
-  font-size: 48px;   // for <i> icons
-  width: 48px;       // for the SVG so it's similar size
-  height: 48px;
-  color: #7a6e64;    // your brown
-  filter: drop-shadow(0 0 14px rgba(255, 255, 255, 1));
-
-}
 .stats-box-last {
   margin-top: 20px;
   filter: invert(35%) sepia(14%) saturate(300%) hue-rotate(346deg) brightness(92%) contrast(90%);
@@ -162,7 +138,7 @@ color: $custom-brown;
 
 .link-brown:hover {
 
-  color: lighten($custom-brown, 20%); // makes a lighter brown automatically
+  color: lighten($custom-brown, 20%);
 }
 /* Footer background */
 .footer-bg {
@@ -175,7 +151,7 @@ color: $custom-brown;
   }
 }
 
-/* Footer text links — same logic as link-brown */
+
 .footer-links a {
   color: $custom-brown !important;
   text-decoration: none;
@@ -187,7 +163,7 @@ color: $custom-brown;
   color: lighten($custom-brown, 20%) !important;
 }
 
-/* Footer icons — same hover logic */
+
 .footer-icons a {
   text-decoration: none;
 }
@@ -233,8 +209,8 @@ color: $custom-brown;
 }
 
 .animal-card-img {
-  height: 230px; /* adjust if you want bigger */
-  object-fit: cover; /* crops instead of stretching */
+  height: 230px;
+  object-fit: cover;
 }
 
 
@@ -252,10 +228,7 @@ color: $custom-brown;
   color: $custom-brown;
 }
 
-/* ===============================
-   Kontakt page form styling fix
-   Makes input text + borders brown
-   =============================== */
+
 .kontakt-page .form-control {
   border: 1.5px solid $custom-brown !important;
   color: $custom-brown !important;
@@ -265,3 +238,40 @@ color: $custom-brown;
   color: lighten($custom-brown, 15%) !important;
 }
 
+
+
+
+
+
+
+/* Impressum/Datenschutz css */
+
+.pkp-intern-box {
+  background-color: #f5f7f8;   // hellgrau
+  border-radius: 4px;
+  border: 1px solid #d7dee4;
+}
+
+.pkp-intern-box h2 {
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-weight: 600;
+}
+
+.pkp-intern-list li {
+  padding: 0.4rem 0;
+}
+
+.pkp-divider {
+  border-bottom: 1px solid #c3ccd4;
+  margin: 0.25rem 0;
+}
+
+.pkp-intern-list {
+  font-size: 0.95rem;
+}
+
+.pkp-intern-active {
+  color: #8b1b2b;     // rot wie THM
+  font-weight: 600;
+}
