@@ -1,10 +1,160 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pick a Pet – Kontakt</title>
+
+    <!-- Kompiliertes Bootstrap + eigenes CSS -->
+    <link rel="stylesheet" href="assets/css/custom.css">
+
+    <!-- Bootstrap Icons (lokale Datei) -->
+    <link rel="stylesheet" href="assets/css/bootstrap-icons.css">
 </head>
 <body>
 
+<!-- ============== NAVBAR (exactly your new version) ============== -->
+<nav class="navbar navbar-expand-lg">
+    <div class="container container-color">
+
+        <!-- Logo -->
+        <a class="navbar-brand d-flex flex-column align-items-center text-center" href="index.html">
+
+            <!-- TOP: text -->
+            <span class="logo-text">
+        P I C K &nbsp; A &nbsp; P E T
+    </span>
+
+            <!-- BOTTOM: icons -->
+            <div class="logo-icons d-flex justify-content-center mt-1">
+                <img src="assets/img/dog.svg" alt="Dog icon" class="logo-icon">
+                <img src="assets/img/cat.svg" alt="Cat icon" class="logo-icon">
+            </div>
+
+        </a>
+
+        <!-- Burger-Button Handy -->
+        <button class="navbar-toggler" type="button"
+                data-bs-toggle="collapse" data-bs-target="#mainNav"
+                aria-controls="mainNav" aria-expanded="false"
+                aria-label="Navigation umschalten">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!--Menu points-->
+        <div class="collapse navbar-collapse" id="mainNav">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="ueber-uns.html">Über uns</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="tiere.html">Tiere</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="spenden.html">Spenden</a>
+                </li>
+            </ul>
+            <div class="d-flex align-items-center ms-lg-3 gap-3">
+                <form class="d-flex nav-search">
+                    <input class="form-control nav-search-input" type="search" aria-label="Search">
+                    <button class="btn nav-search-btn" type="submit">
+                        <i class="bi bi-search"></i>
+                    </button>
+                </form>
+
+                <button class="btn nav-user-btn" type="button">
+                    <i class="bi bi-person"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<!-- ============== LOGIN & REGISTRIEREN CONTENT ============== -->
+<section class="py-5">
+    <div class="container">
+        <div class="row">
+
+            <!-- ANMELDEN -->
+            <div class="col-12 col-md-5 text-center mb-5 mb-md-0">
+                <h2 class="mb-4">ANMELDEN</h2>
+
+                <input type="email" class="form-control mb-3" placeholder="E-Mail">
+                <input type="password" class="form-control mb-3" placeholder="Passwort">
+
+                <button class="btn btn-secondary mt-2">Bestätigen</button>
+            </div>
+
+            <!-- Vertikale Linie in der Mitte -->
+            <div class="col-md-2 d-none d-md-flex justify-content-center">
+                <div style="border-left: 2px solid #7a6e64; height: 100%;"></div>
+            </div>
+
+            <!-- REGISTRIEREN -->
+            <div class="col-12 col-md-5 text-center">
+                <h2 class="mb-4">REGISTRIEREN</h2>
+
+                <div class="d-flex justify-content-center gap-3 mb-3">
+                    <label class="mb-0">
+                        <input type="radio" name="rolle" checked> Kunde
+                    </label>
+                    <label class="mb-0">
+                        <input type="radio" name="rolle"> Anbieter
+                    </label>
+                </div>
+
+                <input type="text" class="form-control mb-3" placeholder="Tierheim">
+
+                <div class="d-flex gap-2 mb-3">
+                    <input type="text" class="form-control" placeholder="Vorname">
+                    <input type="text" class="form-control" placeholder="Nachname">
+                </div>
+
+                <input type="text" class="form-control mb-3" placeholder="Straße">
+                <input type="text" class="form-control mb-3" placeholder="PLZ">
+                <input type="email" class="form-control mb-3" placeholder="E-Mail">
+                <input type="password" class="form-control mb-3" placeholder="Passwort">
+                <input type="password" class="form-control mb-3" placeholder="Passwort bestätigen">
+
+                <button class="btn btn-secondary mt-2">Bestätigen</button>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- ============== FOOTER (exactly your new version) ============== -->
+<footer class="footer-bg">
+    <div class="container text-center">
+
+        <!-- Links -->
+        <p class="footer-links mb-4">
+            <a href="#">Kontakt</a>
+            <a href="#">Impressum</a>
+            <a href="#">Datenschhutz</a>
+            <a href="#">AGB</a>
+        </p>
+
+        <!-- Social Media Icons -->
+        <div class="footer-icons">
+            <a href="#" aria-label="Facebook">
+                <i class="bi bi-facebook"></i>
+            </a>
+            <a href="#" aria-label="Instagram">
+                <i class="bi bi-instagram"></i>
+            </a>
+            <a href="#" aria-label="Twitter">
+                <i class="bi bi-twitter"></i>
+            </a>
+        </div>
+
+    </div>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="assets/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
