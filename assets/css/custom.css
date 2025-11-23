@@ -11866,10 +11866,13 @@ textarea.form-control-lg {
 }
 
 .navbar {
-  background-color: #f0ffff;
   color: #7a6e64;
   padding-top: 0px;
   padding-bottom: 0px;
+  /* makes the bg limited*/
+}
+.navbar .container-color {
+  background-color: #f0ffff;
 }
 .navbar .nav-link {
   padding-left: 20px !important;
@@ -11979,8 +11982,11 @@ textarea.form-control-lg {
 
 /* Footer background */
 .footer-bg {
-  background-color: #f0ffff;
+  background-color: transparent;
   color: #7a6e64;
+}
+.footer-bg .container {
+  background-color: #f0ffff;
 }
 
 /* Footer text links — same logic as link-brown */

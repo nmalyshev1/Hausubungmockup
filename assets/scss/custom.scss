@@ -14,10 +14,16 @@ $custom-brown: #7a6e64;
 }
 
 .navbar {
-  background-color: $navbar-background-color;
+
   color: $custom-brown;
   padding-top: 0px;
   padding-bottom: 0px;
+
+
+  /* makes the bg limited*/
+  .container-color{
+    background-color: $navbar-background-color;
+  }
 
   .nav-link {
     padding-left: 20px !important;
@@ -131,8 +137,13 @@ color: $custom-brown;
 }
 /* Footer background */
 .footer-bg {
-  background-color: $navbar-background-color;
+  background-color: transparent;
   color: $custom-brown;
+
+  .container {
+    background-color: $navbar-background-color;
+
+  }
 }
 
 /* Footer text links — same logic as link-brown */
