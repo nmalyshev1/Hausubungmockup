@@ -215,3 +215,30 @@ color: $custom-brown;
   object-fit: cover; /* crops instead of stretching */
 }
 
+
+
+
+
+/* HTML Page 3 */
+
+
+
+
+
+
+.kontakt-page{
+  color: $custom-brown;
+}
+
+/* ===============================
+   Kontakt page form styling fix
+   Makes input text + borders brown
+   =============================== */
+.kontakt-page .form-control {
+  border: 1.5px solid $custom-brown !important;
+  color: $custom-brown !important;
+}
+
+.kontakt-page .form-control::placeholder {
+  color: lighten($custom-brown, 15%) !important;
+}

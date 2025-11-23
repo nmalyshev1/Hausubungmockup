@@ -12040,4 +12040,22 @@ textarea.form-control-lg {
   object-fit: cover; /* crops instead of stretching */
 }
 
+/* HTML Page 3 */
+.kontakt-page {
+  color: #7a6e64;
+}
+
+/* ===============================
+   Kontakt page form styling fix
+   Makes input text + borders brown
+   =============================== */
+.kontakt-page .form-control {
+  border: 1.5px solid #7a6e64 !important;
+  color: #7a6e64 !important;
+}
+
+.kontakt-page .form-control::placeholder {
+  color: rgb(159.7297297297, 148.2972972973, 138.7702702703) !important;
+}
+
 /*# sourceMappingURL=custom.css.map */
