@@ -12033,4 +12033,9 @@ textarea.form-control-lg {
   height: 50px;
 }
 
+.animal-card-img {
+  height: 230px; /* adjust if you want bigger */
+  object-fit: cover; /* crops instead of stretching */
+}
+
 /*# sourceMappingURL=custom.css.map */

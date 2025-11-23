@@ -167,6 +167,9 @@ color: $custom-brown;
 
 /* HTML Page 2 */
 
+
+
+
 .criterias-text {
   color: $custom-brown;
 
@@ -188,3 +191,9 @@ color: $custom-brown;
 .adjust-search-input{
   height: 50px;
 }
+
+.animal-card-img {
+  height: 230px; /* adjust if you want bigger */
+  object-fit: cover; /* crops instead of stretching */
+}
+
