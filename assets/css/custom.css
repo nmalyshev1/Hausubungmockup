@@ -11859,6 +11859,23 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+@font-face {
+  font-family: "Oswald";
+  src: url("../fonts/oswald/Oswald-ExtraLight.ttf") format("truetype");
+}
+.custom-font {
+  font-family: "Oswald", sans-serif;
+  display: inline-block;
+  transform: scaleY(1.5);
+  letter-spacing: 8px;
+  font-weight: 200;
+  color: #7a6e64;
+}
+
+.custom-color {
+  color: #7a6e64;
+}
+
 .logo-icon {
   width: 20px;
   height: auto;

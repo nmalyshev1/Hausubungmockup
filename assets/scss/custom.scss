@@ -6,6 +6,28 @@ $custom-brown: #7a6e64;
 
 @import "../vendor/bootstrap/scss/bootstrap";
 
+@font-face {
+  font-family: "Oswald";
+  src: url("../fonts/oswald/Oswald-ExtraLight.ttf") format("truetype");
+}
+
+
+.custom-font {
+  font-family: "Oswald", sans-serif;
+  display: inline-block;
+  transform: scaleY(1.5);
+
+
+  letter-spacing: 8px;
+  font-weight: 200;
+  color: $custom-brown;
+}
+
+.custom-color{
+  color: $custom-brown;
+}
+
+
 
 .logo-icon{
   width: 20px;
@@ -26,7 +48,7 @@ $custom-brown: #7a6e64;
 
 
   .nav-search-btn,
-  .nav-user-btn {
+  .nav-user-btn,{
     color: $custom-brown;
     font-weight: 600;
 
@@ -242,3 +264,4 @@ color: $custom-brown;
 .kontakt-page .form-control::placeholder {
   color: lighten($custom-brown, 15%) !important;
 }
+
