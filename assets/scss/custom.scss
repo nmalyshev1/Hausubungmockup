@@ -16,7 +16,7 @@ $custom-brown: #7a6e64;
 
 
 
-.navbar {
+.navbar, .nav-link {
   color: $custom-brown;
   padding-block: 0;
 
@@ -24,17 +24,14 @@ $custom-brown: #7a6e64;
     background-color: $navbar-background-color;
   }
 
-  .nav-link {
 
+  .nav-search-btn,
+  .nav-user-btn {
     color: $custom-brown;
     font-weight: 600;
 
     &:hover {
       color: lighten($custom-brown, 12%);
-    }
-
-    &.active {
-      color: darken($custom-brown, 12%);
     }
   }
 
@@ -92,9 +89,7 @@ color: $custom-brown;
   margin: 0 auto; /* center */
 }
 
-.hero-about-text{
-  font-weight: 400px;
-}
+
 
 .stats-section {
   margin-top: -500px;  // pulls icons up over the image

@@ -11865,24 +11865,25 @@ textarea.form-control-lg {
   display: inline-block;
 }
 
-.navbar {
+.navbar, .nav-link {
   color: #7a6e64;
   padding-block: 0;
 }
-.navbar .container-color {
+.navbar .container-color, .nav-link .container-color {
   background-color: #f0ffff;
 }
-.navbar .nav-link {
+.navbar .nav-search-btn,
+.navbar .nav-user-btn, .nav-link .nav-search-btn,
+.nav-link .nav-user-btn {
   color: #7a6e64;
   font-weight: 600;
 }
-.navbar .nav-link:hover {
+.navbar .nav-search-btn:hover,
+.navbar .nav-user-btn:hover, .nav-link .nav-search-btn:hover,
+.nav-link .nav-user-btn:hover {
   color: rgb(152.8378378378, 140.5783783784, 130.3621621622);
 }
-.navbar .nav-link.active {
-  color: rgb(88.3675675676, 79.6756756757, 72.4324324324);
-}
-.navbar .nav-user-btn {
+.navbar .nav-user-btn, .nav-link .nav-user-btn {
   font-size: 24px;
 }
 
@@ -11923,10 +11924,6 @@ textarea.form-control-lg {
   object-fit: cover; /* crop inside circle */
   display: block;
   margin: 0 auto; /* center */
-}
-
-.hero-about-text {
-  font-weight: 400px;
 }
 
 .stats-section {
