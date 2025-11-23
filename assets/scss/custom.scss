@@ -4,30 +4,8 @@
 @import "../vendor/bootstrap/scss/bootstrap";
 
 
-/* Beispiel-Overrides (kannst lassen oder ändern) */
-$primary: #ff7b2c;
-$font-family-sans-serif: "Arial", sans-serif;
-
-/* eigene Klassen */
-
-/* Kleine runde Bilder (Das ist Pick a Pet + Testimonials) */
-.round-image {
-  width: 140px;
-  height: 140px;
-  object-fit: cover;   /* Bild wird zugeschnitten, nicht verzerrt */
-  border-radius: 50%;  /* macht Kreis */
-  display: block;
-  margin: 0 auto;      /* zentriert */
-}
-
-/* Großes Banner in der Mitte etwas begrenzen */
-
-
-.round-image {
-  width: 140px;
-  height: 140px;
-  object-fit: cover;
-  border-radius: 50%;
-  display: block;
-  margin: 0 auto;
+.logo-icon{
+  width: 20px;
+  height: auto;
+  display: inline-block;
 }
